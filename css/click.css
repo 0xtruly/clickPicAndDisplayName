@@ -1,0 +1,18 @@
+.box{
+    background:#eee;
+    margin-bottom: 1px;
+    margin-right: -7px;
+    margin-left: -7px;
+    border-radius:5px;
+}
+footer {
+    background-color: #8a7e7e
+    display: -ms-inline-grid;
+    position: relative;
+    text-align: center;
+    top: 320px;
+}
+.row{
+    margin-right: 5px;
+    margin-left: 5px;
+}

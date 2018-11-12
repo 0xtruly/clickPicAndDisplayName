@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Fav Animals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/click.css" />
+</head>
+
+<body>
+    <h1>Some Animals I'm Kinda cool with</h1>
+    <p>My name is <strong>Segun Ade</strong> and these are some list of animals I'm cool with</p>
+   
+    <div class="row">
+        <div class="col-3">
+            <div class="box"><img id="cat" src="./images/cat.jpeg" alt="cat" width="100%" height="100%"></div>
+        </div>
+        <div class="col-3">
+            <div class="box"><img id="dog" src="./images/dog.jpeg" alt="dog" width="100%" height="100%"></div>
+        </div>
+        <div class="col-3">
+            <div class="box" id="parrot"><img id="parrot" src="./images/parrot.jpeg" alt="parrot" width="100%" height="100%"></div>
+        </div>
+
+    </div>
+    <div id="entry"></div>
+    <footer>
+        <!-- Don't do this -->
+        <!-- &copy; <script charset="utf-8">document.write((new Date()).getFullYear())</script>. Front-End Engineering -->
+        <!-- use this instead -->
+        &copy;<span id="date"></span>. Segun Adebanjo
+    </footer>
+
+
+    <script>
+        document.getElementById('date').textContent = (new Date()).getFullYear();
+        var cat = document.querySelector("#cat");
+        cat.addEventListener('click', function(){
+            entry.textContent = 'you clicked a cat'
+        });
+        var dog = document.querySelector("#dog");
+        dog.addEventListener('click', function(){
+            entry.textContent = 'You clicked on a Dog'
+        });
+        var parrot = document.querySelector("#parrot");
+        parrot.addEventListener('click', function (){
+            entry.textContent = 'You clicked on a Parrot'
+        });
+      
+    </script>
+</body>
+
+</html>
